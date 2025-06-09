@@ -1,0 +1,90 @@
+:root {
+    --mainOffwhite: #ffffe4;
+    --mainBeige: #ffc7a0;
+    --mainPink: #f6906c;
+    --mainGreen: #8b9820;
+    --mainGreen: rgb(83, 126, 57);
+    --secondaryOffWhite: #dbfffe;
+    --mainDark: #474832;
+    --faidedDark: #acac9a;
+    --mainOrange: rgb(232, 100, 40);
+    --fadedOrange: #ffb993;
+    --secondGreen: #1b3d2f;
+    --darkBrown: #4f4538;
+    --mainYellow: rgb(253, 223, 140);
+    --mainRed: rgb(219, 66, 42);
+    --secondRed: rgb(228, 76, 40);
+}
+
+body {
+    background-color: var(--main-offwhite);
+}
+
+#la-recettes-root {
+    width: 80%;
+    margin: auto;
+}
+
+.home-image {
+    height: 200px;
+    margin: auto;
+}
+
+#home-screen > .home-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#home-screen > .home-container > input.home {
+    background-color: var(--mainYellow);
+    width: 75%;
+    margin: auto;
+    color: var(--mainGreen);
+    padding-left: 1em;
+}
+
+#home-screen > .home-container > button {
+    background-color: var(--mainOrange);
+    color: var(--mainOffwhite);
+}
+
+#recipe-details > div.recipe-details-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#recipe-details > div.recipe-details-content > img {
+    width: 80%;
+}
+#recipe-details > div.recipe-details-content > .title-container {
+    color: var(--mainDark);
+}
+
+#recipe-details > h1 {
+    color: var(--secondGreen);
+}
+
+#recipe-details > div.home-button {
+    color: var(--mainRed);
+    outline-color: var(--mainRed);
+}
+
+#recipe-details > div.recipe-details-content {
+    background-color: var(--mainYellow);
+}
+
+#recipe-details > div.recipe-details-content > img {
+    height: 5%;
+}

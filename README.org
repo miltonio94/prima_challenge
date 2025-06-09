@@ -1,3 +1,30 @@
 #+TITLE: Prima Challenge
 
 Programming challenge for Prima. A recipe finder using ~https://www.themealdb.com/~.
+
+* How to setup and run the project
+
+To set up and run the project first clone the project and go into the directory
+
+#+begin_src bash
+git clone https://github.com/miltonio94/prima_challenge.git
+cd prima_challenge
+#+end_src
+
+Compile the project using the following command
+
+#+begin_src bash
+elm make --output="./app.js" src/Main.elm
+#+end_src
+
+You can run the project using ~http-server~, ~http-server~ isn't meant for production but for running a simple project such as this one it'll do fine.
+
+#+begin_src bash
+npx http-server
+#+end_src
+
+You shouldn't need to install ~http-server~ but, if you have an older version of node it may be needed, you can do so using the following command
+
+#+begin_src bash
+npm install -g http-server
+#+end_src
